@@ -21,18 +21,7 @@ pipeline{
 				sh 'lsblk'
 			}
 		}
-        stage ('5-ops-check'){
-            steps{
-                sh 'cat /etc/os-release'
-            }
-        }
- 
-         stage ('6-scriptcontrol'){
-            steps{
-                sh 'bash -x /var/lib/jenkins/workspace/Team5-job-demo/script.sh'
-            }
-        }
-        stage('7-scriptcontrol'){
+		stage('5-scriptcontrol'){
             steps{
                 sh 'bash -x /var/lib/jenkins/workspace/Team5-job-demo/script.sh'
             }
