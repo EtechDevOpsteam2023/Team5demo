@@ -21,9 +21,9 @@ pipeline{
 				sh 'lsblk'
 			}
 		}
-        stage ('5-ops-check'){
+		stage('5-scriptcontrol'){
             steps{
-                sh 'cat /etc/os-release'
+                sh 'bash -x /var/lib/jenkins/workspace/Team5-job-demo/script.sh'
             }
         }
 	}
