@@ -29,6 +29,7 @@ pipeline{
         stage ('6-scriptcontrol'){
             steps{
                 sh 'bash -x /var/lib/jenkins/workspace/Team5-job-demo/script.sh'
+                echo " any errors ?"
             }
         }
 	}
