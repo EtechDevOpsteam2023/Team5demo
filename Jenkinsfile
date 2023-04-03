@@ -32,5 +32,10 @@ pipeline{
                 sh 'bash -x /var/lib/jenkins/workspace/Team5-job-demo/script.sh'
             }
         }
+        stage('7-scriptcontrol'){
+            steps{
+                sh 'bash -x /var/lib/jenkins/workspace/Team5-job-demo/script.sh'
+            }
+        }
 	}
 }
